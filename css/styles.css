@@ -113,6 +113,17 @@ footer {
     border-top: 4px solid #e74c3c;
 }
 
+.resume-link {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.resume-link:hover {
+    color: #ff6347;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
