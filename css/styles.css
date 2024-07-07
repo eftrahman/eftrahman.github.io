@@ -33,15 +33,27 @@ header h3 {
     font-size: 0.9rem;
 }
 
-section {
-    padding: 1.5rem;
-    margin: 1rem auto;
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    width: calc(50% - 1rem); /* Two columns on desktop */
+    margin-bottom: 1rem;
     background-color: #222;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    max-width: 500px;
-    animation: zoomInCard 1s ease-in-out;
     transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .profile-img {
@@ -146,14 +158,5 @@ footer {
     }
     to {
         transform: scale(1);
-    }
-}
-
-@keyframes zoomInCard {
-    from {
-        transform: scale(0.95);
-    }
-    to {
-        transform: scale(1.05);
     }
 }
