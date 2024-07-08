@@ -4,4 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
     cards.forEach(card => {
         card.addEventListener("mouseover", function () {
             this.style.transform = "scale(1.1)";
-            this.style
+            this.style.transition = "transform 0.3s ease-in-out";
+        });
+
+        card.addEventListener("mouseout", function () {
+            this.style.transform = "scale(1)";
+            this.style.transition = "transform 0.3s ease-in-out";
+        });
+    });
+});
