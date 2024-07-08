@@ -8,14 +8,14 @@
 }
 
 body {
-    background-color: #1a1a1a;
+    background-color: #020022;
     color: #e3e3e3;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
 header {
-    background-color: #020022;
+    background-color: #111;
     color: #e3e3e3;
     padding: 1rem 0;
     text-align: center;
@@ -25,12 +25,12 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
 header h3 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .container {
@@ -38,11 +38,12 @@ header h3 {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .about-card {
     grid-column: span 1;
-    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -63,7 +64,6 @@ header h3 {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     animation: zoomInCard 1s ease-in-out;
     transition: transform 0.3s ease-in-out;
-    max-width: 100%;
 }
 
 .card:hover {
@@ -82,9 +82,9 @@ header h3 {
 }
 
 h2, h3 {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #e74c3c;
     animation: fadeIn 1.5s ease-in-out;
 }
@@ -103,7 +103,7 @@ ul li {
     padding: 0.3rem 0.5rem;
     border-radius: 4px;
     transition: transform 0.3s ease-in-out;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 ul li:hover {
@@ -115,21 +115,21 @@ ul li:hover {
 }
 
 .project h3 {
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
     color: #e74c3c;
 }
 
 .project p {
     margin-bottom: 0.3rem;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 .project a {
     color: #e74c3c;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 .project a:hover {
@@ -141,9 +141,6 @@ footer {
     color: #e3e3e3;
     text-align: center;
     padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
     border-top: 4px solid #e74c3c;
 }
 
