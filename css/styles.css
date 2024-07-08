@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #020022;
+    background-color: #1a1a1a;
     color: #e3e3e3;
     line-height: 1.6;
     overflow-x: hidden;
@@ -33,15 +33,30 @@ header h3 {
     font-size: 0.9rem;
 }
 
-section {
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.card {
     padding: 1.5rem;
-    margin: 1rem auto;
     background-color: #222;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    max-width: 500px;
     animation: zoomInCard 1s ease-in-out;
     transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .profile-img {
